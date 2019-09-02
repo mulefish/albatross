@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .less {
+        background-color: blue;
+        width:10px;
+      }
+      .ave {
+        background-color:black;
+        width:10px;
+      }
+      .more {
+        background-color:red;
+        width:10px;
+      }
+      .left {
+        width:120px;
+      }
+      .right {
+        width:120px;
+      }
+</style>
+  </head>
+  <body>
+
+
+    <table border='0'>
+
+        <tr>
+
+
+    
+            </tr>
+    
+
+      <tr>
+
+
+        <td class='left' align='right'> <div class="less" id="l1">&nbsp;</div></td>
+          <td><div class="ave">&nbsp;</div></td>
+          <td class='right'><div class="more">&nbsp;</div></td>
+         
+
+        </tr>
+      </table>
+          
+<script>
+function len() { 
+  let element = document.getElementById("l1")
+  element.style.width = "100px";  
+  fetchTestData()
+}
+
+function fetchTestData() {
+    fetch('http://localhost:5000/test/')
+      .then(response => response.json())
+      .then(data => console.log(data));
+}
+
+
+</script>
+<button onClick="len()">len... </button>
+
+
+
+</body>
+</html> 
