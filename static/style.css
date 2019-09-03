@@ -1,0 +1,18 @@
+.less {
+  background-color: blue;
+  width:10px;
+}
+.ave {
+  background-color:black;
+  width:5px;
+}
+.more {
+  background-color:red;
+  width:10px;
+}
+.left {
+  width:120px;
+}
+.right {
+  width:120px;
+}
